@@ -382,12 +382,12 @@ class XmlaOlap4jDriverVersion {
         <ivy:deliver conf="default,default.transitive" deliverpattern="${bin.dir}/ivy-xmla.xml" />
         <replace token="default.transitive" value="default" file="${bin.dir}/ivy-xmla.xml"/>
         <ivy:retrieve conf="default" pattern="${lib.dir}/[module](-[classifier]).[ext]" />
-
+<!--
         <ivy:resolve file="ivy-tck.xml" conf="test" />
         <ivy:deliver conf="test,test.transitive" deliverpattern="${bin.dir}/ivy-tck.xml" />
     	<replace token="test.transitive" value="test" file="${bin.dir}/ivy-tck.xml"/>
         <ivy:retrieve conf="test" pattern="${testlib.dir}/[module](-[classifier]).[ext]" />
-
+-->
         <ivy:resolve file="ivy.xml" conf="default" />
         <ivy:deliver conf="default" deliverpattern="${dist.dir}/ivy.xml" />
 
