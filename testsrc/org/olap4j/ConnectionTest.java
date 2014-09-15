@@ -31,7 +31,7 @@ import org.olap4j.type.*;
 import junit.framework.AssertionFailedError;
 import junit.framework.TestCase;
 
-import mondrian.olap.MondrianProperties;
+//import mondrian.olap.MondrianProperties;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
@@ -2653,7 +2653,7 @@ public class ConnectionTest extends TestCase {
             if (tester.getFlavor().equals(Flavor.XMLA)
                 || tester.getFlavor().equals(Flavor.REMOTE_XMLA))
             {
-                MondrianProperties.instance().QueryTimeout.set(5);
+                //MondrianProperties.instance().QueryTimeout.set(5);
             }
             final CellSet cellSet = olapStatement.executeOlapQuery(
                 "SELECT Filter(\n"
@@ -2673,7 +2673,7 @@ public class ConnectionTest extends TestCase {
             if (tester.getFlavor().equals(Flavor.XMLA)
                 || tester.getFlavor().equals(Flavor.REMOTE_XMLA))
             {
-                MondrianProperties.instance().QueryTimeout.set(0);
+               // MondrianProperties.instance().QueryTimeout.set(0);
             }
         }
         if (exceptions[0] != null) {
@@ -2697,7 +2697,8 @@ public class ConnectionTest extends TestCase {
         if (tester.getFlavor().equals(Flavor.XMLA)
             || tester.getFlavor().equals(Flavor.REMOTE_XMLA))
         {
-            MondrianProperties.instance().QueryTimeout.set(1);
+            //FIXME 
+           // MondrianProperties.instance().QueryTimeout.set(1);
         }
         try {
             final CellSet cellSet =
@@ -2714,7 +2715,7 @@ public class ConnectionTest extends TestCase {
             if (tester.getFlavor().equals(Flavor.XMLA)
                 || tester.getFlavor().equals(Flavor.REMOTE_XMLA))
             {
-                MondrianProperties.instance().QueryTimeout.set(0);
+               // MondrianProperties.instance().QueryTimeout.set(0);
             }
             assertTrue(
                 e.getMessage(),
