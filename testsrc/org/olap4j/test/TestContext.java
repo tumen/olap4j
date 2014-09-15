@@ -25,7 +25,6 @@ import org.olap4j.mdx.*;
 
 import junit.framework.*;
 
-import org.apache.commons.dbcp.*;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -34,6 +33,8 @@ import java.sql.*;
 import java.util.List;
 import java.util.Properties;
 import java.util.regex.Pattern;
+import org.apache.commons.dbcp.*;
+
 
 /**
  * Context for olap4j tests.
@@ -116,7 +117,7 @@ public class TestContext {
      */
     private static void addTck(TestSuite suite) {
         for (Class<?> tckClass : TCK_CLASSES) {
-            suite.addTestSuite(tckClass);
+            //suite.addTestSuite(tckClass);
         }
     }
 
