@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/olap4j/olap4j.png)](https://travis-ci.org/olap4j/olap4j)
 
-# olap4j #
+# olap4j for alibaba #
+
+It's supported Alibaba data source：ODPS、Garuda。
 
 Olap4j is an open Java API for accessing OLAP data.
 
@@ -17,6 +19,7 @@ and execute to create a
 There are also similar mechanisms for browsing metadata.
 As a result, olap4j is easy to learn if you have JDBC
 experience and know a little about OLAP.
+
 
 ## Prerequisites ##
 
