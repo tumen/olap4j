@@ -67,9 +67,9 @@
     <dependency org="junit" name="junit" rev="3.8.1"/>
 
     <!-- OLAP tests dependencies - uses Mondrian -->
-    <dependency org="pentaho" name="mondrian" rev="4.0.0-SNAPSHOT" changing="true">
+   <!-- <dependency org="pentaho" name="mondrian" rev="4.0.0-SNAPSHOT" changing="true">
       <exclude org="${ivy.artifact.group}" module="${ivy.artifact.id}"/>
-    </dependency>
+    </dependency>-->
     <dependency org="pentaho" name="mondrian-data-foodmart" rev="0.9-SNAPSHOT" conf="test->default"/>
   </dependencies>
 </ivy-module>

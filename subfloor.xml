@@ -192,9 +192,6 @@ TYPICAL TARGET SEQUENCE
   <property name="testlib.dir"
             value="${basedir}/testlib"
             description="Directory for jar files needed during unit testing" />
-  <property name="testlib.dir.other"
-            value="${basedir}/other"
-            description="other" />
   <property name="testbin.dir" value="${bin.dir}/test" description="Base directory for all compiler generated test output" />
   <property name="testclasses.dir"
             value="${testbin.dir}/classes"
@@ -340,9 +337,6 @@ TYPICAL TARGET SEQUENCE
   <path id="test.classpath">
     <path refid="classpath"/>
     <fileset dir="${testlib.dir}">
-      <include name="*.jar" />
-    </fileset>
-    <fileset dir="${testlib.dir.other}">
       <include name="*.jar" />
     </fileset>
     <pathelement location="${classes.dir}" />
